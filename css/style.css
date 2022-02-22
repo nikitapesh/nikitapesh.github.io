@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat' !important; 
+}
+@font-face {
+	font-family: 'Montserrat'; 
+	src: url('../fonts/Montserrat-Regular.ttf'); 
+}
+body{
+    background-color: #242222;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav{
+    display: flex;
+}
+.header-nav-item{
+    list-style-type: none;
+}
+.header-nav-item:not(:last-child){
+    margin-right: 55px;
+}
+.header-nav-link{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+}
+.header-number{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+}
+.hero{
+    display: flex;
+    align-items: center;
+}
+.hero-header{
+    margin-top: 80px;
+}
+.hero-model{
+    width: 44vw;
+}
+.hero-header-text{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.hero-description{
+    margin-top: 65px;
+}
+.hero-description-text{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+}
+.hero-btn{
+    margin-top: 80px;
+}
+.hero-button{
+    color:#242222;
+    font-size: 16px;
+    font-weight: 600;
+    background: #C7E80A;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 25px 88px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.hero-icons{
+    display: flex;
+    margin-top: 20px;
+}
+.hero-solar, .hero-criosauna, .hero-hamam{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+.hero-solar p, .hero-criosauna p, .hero-hamam p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.hero-img{
+    background-image: url('../image/hero-molnii.svg');
+    background-size: 100%;
+}
+.benefits{
+    margin-top: 200px;
+    text-align: center;
+}
+.benefits-header{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 45px;
+}
+.benefits-description{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.benefits-icons{
+    display: flex;
+    width: 559px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.benefits-icon{
+    width: 140px;
+    margin-top: 50px;
+}
+.benefits-icon p{
+    color: #C7E80A;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.bg{
+    background-image: url('../image/main-bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.services{
+    margin-top: 50px;
+    padding-top: 100px;
+}
+.services-header{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+}
+.slider{
+    display: flex;
+    justify-content: space-around;
+}
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    margin-top: 90px;
+}
+.slider .slider-item {
+    object-fit: cover;
+    width: 100%;
+}
+.slider-item{
+    text-align: center;
+}
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+}
+.slider .next {
+    right: -40px;
+    top: 130px;
+}
+.slider .prev {
+    left: -40px;
+    top: 130px;
+}
+.slider-item p{
+    color: #fff;
+    font-weight: 800;
+    margin-top: 15px;
+}
+.view-header{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    width: 60%;
+}
+.view{
+    display: flex;
+    margin-top: 200px;
+}
+.view-btn{
+    color:#242222;
+    font-size: 16px;
+    font-weight: 600;
+    background: #C7E80A;
+    border-radius: 30px;
+    padding: 25px 61px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.command{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.command-text{
+    width: 45%;
+}
+.command-header{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+.command-description{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.command-btn{
+    color:#242222;
+    font-size: 16px;
+    font-weight: 600;
+    background: #C7E80A;
+    border-radius: 30px;
+    padding: 25px 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 60px;
+}
+.bottom-bg{
+    transform: translateY(-420px);
+}
+.footer{
+    background: #432545;
+    padding: 50px 220px;
+}
+.footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-text p{
+    color: #fff;
+    font-size: 12px;
+}
+.footer-icon{
+    margin-right: 10px;
+}
+.burger{
+    display: none;
+}
+.bottom-bg{
+    width: 98vw;
+}
+
+@media(max-width: 877px){
+    .hero-description-text{
+        font-size: 25px;
+    }
+    .nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .slider-item3{
+        display: none;
+    }
+    .bottom-bg{
+        transform: translateY(-400px);
+    }
+    .command{
+        display: block;
+        text-align: center;
+    }
+    .command-text{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .footer{
+        padding: 20px;
+    }
+    .footer-text{
+        display: block;
+    }
+    .footer-text p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .footer-text div{
+        margin-top: 20px;
+    }
+    .view-btn{
+        padding: 20px 50px;
+        border-radius: 25px;
+    }
+    .view-header{
+        font-size: 25px;
+    }
+    .hero-model{
+        width: 42vw;
+    }
+}
+@media(max-width: 692px){
+    .bottom-bg{
+        transform: translateY(-360px);
+    }
+    .view-btn{
+        padding: 20px 40px;
+        font-size: 14px;
+    }
+    .command-btn{
+        font-size: 14px;
+        padding: 20px 40px;
+    }
+    .hero-button{
+        padding: 20px 70px;
+    }
+}
+@media(max-width: 666px){
+    .hero-hammer{
+        width: 250px;
+    }
+    .hero-header-text{
+        font-size: 16px;
+    }
+    .hero-description-text {
+        font-size: 20px;
+    }
+}
+@media(max-width: 642px){
+    .hero-hammer{
+        display: none;
+    }
+    .hero{
+        display: block;
+    }
+    .hero-model {
+        width: 92vw;
+    }
+    .hero-header-text{
+        display: none;
+    }
+    .hero-description-text{
+        font-size: 24px;
+    }
+    .hero-btn{
+        text-align: center;
+    }
+    .hero-icons{
+        display: none;
+    }
+    .slider-item2{
+        display: none;
+    }
+    .view-header{
+        width: 100%;
+    }
+    .view{
+        display: block;
+        text-align: center;
+    }
+    .slider .next {
+        right: -30px;
+    }
+    .slider .prev {
+        left: -30px;
+    }
+    .trenera{
+        width: 80vw;
+    }
+    .bottom-bg{
+        transform: translateY(-200px);
+    }
+    .benefits-icons{
+        width: auto;
+        justify-content: space-around;
+    }
+    .command-text{
+        width: 90%;
+    }
+    .footer-icons{
+        display: none;
+    }
+}
+@media(max-width: 640px){
+    .benefits-icons{
+        width: 559px;
+    }
+}
+@media(max-width: 568px){
+    .benefits-icons{
+        width: auto;
+    }
+}
